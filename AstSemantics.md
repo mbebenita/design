@@ -415,6 +415,13 @@ All comparison operators yield 32-bit integer results with `1` representing
 The same operators are available on 64-bit integers as the those available for
 32-bit integers.
 
+## Boolean operations
+
+WebAssembly doesn't have a dedicated boolean type; boolean values are repsented
+using the `i32` type.
+
+  * `bool.not`: logical not (return 0 if operand is non-zero, 1 otherwise)
+
 ## Floating point operators
 
 Floating point arithmetic follows the IEEE 754-2008 standard, except that:
